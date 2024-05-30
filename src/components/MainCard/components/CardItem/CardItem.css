@@ -1,9 +1,4 @@
 .card-item {
-  /* border: 1px solid black; */
-  /* padding: 2rem;
-  border-radius: 1rem;
-  background: var(--cardBg); */
-  /* position:relative; */
   position: relative;
   /* border: 2px solid orange; */
   display: flex;
@@ -12,22 +7,21 @@
   flex-direction: column;
   border-radius: 2rem;
   overflow: hidden;
+  text-shadow: 1px 1px 1px var(--mainBg);
 }
 
 .top-transparent-row {
   height: 5rem;
   width: 100%;
-  /* border: 2px solid pink; */
+  position: relative;
 }
 
 .highlight-row {
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
-  /* border: 2px solid white; */
-  width: 100%;
+  width: 99%;
   position: absolute;
-  top: 0;
   height: 65%;
   top: -0.5rem;
 }
@@ -73,13 +67,13 @@
 
 .h1-loader {
   height: 7rem;
-  width: 105px;
+  width: 115px; /*bit of a magic number that just works */
   margin: 2.25rem 0;
 }
 
 .h5-loader {
   height: 3rem;
-  width: 105px;
+  width: 125px; /*bit of a magic number that just works */
 }
 
 .loader::after {
@@ -125,9 +119,5 @@
 
   .loader-h1 {
     height: 3rem;
-    /* width: 105px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 1rem; */
   }
 }

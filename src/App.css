@@ -22,7 +22,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
   font-family: var(--mainFont);
   padding: 2rem;
   padding-top: 6rem;

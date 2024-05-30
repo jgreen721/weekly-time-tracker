@@ -1,0 +1,12 @@
+.footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: white;
+  /* position: absolute; */
+  /* bottom: 0; */
+}
+
+.footer a {
+  color: var(--secondaryBg);
+}

@@ -8,8 +8,7 @@ const SplashScreen = () => {
         <h1>Time</h1>
         <h1>Tracker</h1>
       </div>
-        {/* <h1>Time</h1>
-        <h1>Tracker</h1> */}
+      
     </div>
   )
 }

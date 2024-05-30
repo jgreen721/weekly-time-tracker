@@ -1,4 +1,4 @@
-import { SplashScreen,MainCard,ThemePicker } from './components'
+import { SplashScreen,MainCard,ThemePicker,Footer } from './components'
 import './App.css'
 import { useAppContext } from '../appcontext'
 
@@ -8,8 +8,9 @@ function App() {
     <div data-theme={theme} className="app">
        <div className="app-content">
              <SplashScreen/>
-              <ThemePicker/>
-              <MainCard/>
+                <MainCard/>
+                <ThemePicker/>
+              <Footer/>
         </div>
     </div>
   )

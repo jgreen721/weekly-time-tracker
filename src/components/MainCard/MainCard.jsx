@@ -11,6 +11,7 @@ const MainCard = () => {
     // console.log("items",items);
 
   return items.length ?  (
+    <div className="main-content-area">
     <div className="main-card">
        <UserCard/>
         <ul className="items-grid">
@@ -18,6 +19,7 @@ const MainCard = () => {
                 <CardItem key={item.id} item={item}/>
             ))}
         </ul>
+    </div>
     </div>
   ) :
   <h1>Loading...</h1>

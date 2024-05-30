@@ -18,7 +18,6 @@ const CardItem = ({item}) => {
   const {category,loaded,theme} = useAppContext();
   const [val,setVal] = useState(-1)
   const [prevVal, setPrevVal] = useState(-1)
-  // const [renderedDaily,setRenderedDaily] = useState(false)
   const [renderedWeekly,setRenderedWeekly] = useState(false)
   const [renderedMonthly,setRenderedMonthly] = useState(false)
 
@@ -27,7 +26,7 @@ const CardItem = ({item}) => {
 
   useEffect(()=>{
       // console.log('category changed!');
-      if(!renderedMonthly || !renderedMonthly){
+      if(!renderedWeekly || !renderedMonthly){
       setVal(-1);
       setPrevVal(-1);
       let timeRange = Math.random() * 3500 | 0;
