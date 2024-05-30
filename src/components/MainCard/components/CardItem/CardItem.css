@@ -1,0 +1,133 @@
+.card-item {
+  /* border: 1px solid black; */
+  /* padding: 2rem;
+  border-radius: 1rem;
+  background: var(--cardBg); */
+  /* position:relative; */
+  position: relative;
+  /* border: 2px solid orange; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.top-transparent-row {
+  height: 5rem;
+  width: 100%;
+  /* border: 2px solid pink; */
+}
+
+.highlight-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  /* border: 2px solid white; */
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 65%;
+  top: -0.5rem;
+}
+
+.item-icon {
+  margin-right: 1.5rem;
+}
+
+.card-item-content {
+  padding: 2rem;
+  border-radius: 1rem;
+  background: var(--cardBg);
+  width: 100%;
+  z-index: 5;
+}
+
+.card-item-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12.5rem;
+}
+
+.card-category-h3 {
+  white-space: nowrap;
+}
+
+.card-data-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-h1 {
+  margin: 2.25rem 0;
+}
+
+.loader {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.h1-loader {
+  height: 7rem;
+  width: 105px;
+  margin: 2.25rem 0;
+}
+
+.h5-loader {
+  height: 3rem;
+  width: 105px;
+}
+
+.loader::after {
+  content: "";
+  position: absolute;
+  width: 250%;
+  height: 100%;
+  background: linear-gradient(to right, var(--mainBg), var(--secondaryBg));
+  animation: loader 4s linear infinite alternate;
+}
+
+@keyframes loader {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100px);
+  }
+}
+
+.animate-data {
+  animation: animatedata 0.75s forwards;
+}
+
+@keyframes animatedata {
+  0% {
+    transform: scaleY(0);
+    filter: blur(20px);
+  }
+  100% {
+    transform: scaleY(1);
+    filter: blur(0px);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .card-item-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .loader-h1 {
+    height: 3rem;
+    /* width: 105px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem; */
+  }
+}

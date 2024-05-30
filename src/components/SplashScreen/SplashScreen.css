@@ -1,0 +1,61 @@
+.splash-view-container {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  /* pointer-events: none; */
+  /* border: 3px solid red; */
+  animation: removeel 4s forwards;
+}
+
+@keyframes removeel {
+  100% {
+    display: none;
+  }
+}
+
+.splash-view-content {
+  /* position: absolute; */
+  position: relative;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  animation: blurfade 3s 1s forwards;
+}
+
+.splash-view-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 65%;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  animation: blurfade 3s 1s forwards;
+}
+
+.splash-view-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(45px);
+  animation: blurfade 3s 1s forwards;
+}
+
+@keyframes blurfade {
+  50% {
+    filter: blur(20px);
+  }
+  100% {
+    filter: blur(40px);
+    opacity: 0;
+    /* display: none; */
+  }
+}

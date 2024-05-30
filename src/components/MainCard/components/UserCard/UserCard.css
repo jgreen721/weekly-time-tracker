@@ -1,0 +1,136 @@
+.users-card {
+  background: var(--cardBg);
+  /* padding: 3.2rem; */
+  border-radius: 2rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px -4px 3px rgba(10, 15, 20, 0.5) inset;
+}
+
+.users-card-col {
+  background: var(--desaturatedblue);
+  background: #5747ea;
+  padding: 3.2rem;
+  border-radius: 2rem;
+  box-shadow: 4px -2px 3px rgba(10, 15, 20, 0.5) inset;
+}
+
+.avatar-div {
+  height: 8rem;
+  width: 8rem;
+  border: 4px solid var(--mainColor);
+  border-radius: 50%;
+  box-shadow: 3px 2.5px 5px rgba(255, 255, 255, 0.5);
+  transform: scaleX(0);
+  animation: animateavatar 1s 3s forwards;
+}
+
+@keyframes animateavatar {
+  0% {
+    transform: scaleX(0);
+    filter: hue-rotate(90deg);
+  }
+  50% {
+    transform: scaleX(1.1);
+    filter: hue-rotate(90deg);
+  }
+  100% {
+    transform: scaleX(1);
+    filter: hue-rotate(0deg);
+  }
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+}
+
+.users-info-div {
+  margin: 4.5rem 0;
+  margin-right: 5rem;
+  /* margin-bottom: 7.5rem; */
+}
+
+.users-name-div {
+  margin-top: 2rem;
+  overflow: hidden;
+}
+
+.rise-up-name {
+  transform: translateY(25rem);
+  animation: risename 1s var(--i) forwards;
+}
+
+@keyframes risename {
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.categories {
+  padding: 0 3.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  /* border: 2px solid white; */
+  flex-grow: 1;
+}
+
+.category-item {
+  cursor: pointer;
+  transition: 0.25s ease;
+  letter-spacing: 0.15rem;
+}
+
+.category-item:hover {
+  transform: scale(1.2, 0.95);
+}
+
+.highlight {
+  text-shadow: 1px 1px 1px white, 1px 1px 5px white, 1px 1px 15px white;
+}
+
+@media screen and (max-width: 850px) {
+  .users-card-col {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    gap: 3rem;
+  }
+
+  .avatar-div {
+    flex: none;
+  }
+
+  .users-name-div {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .users-info-div {
+    margin: 2rem 0;
+  }
+
+  .users-name-div {
+    margin-top: 0rem;
+  }
+
+  .categories {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 3.2rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .avatar-div {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+  .users-name-div {
+    display: flex;
+    gap: 1rem;
+  }
+}

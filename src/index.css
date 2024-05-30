@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --orange: hsl(15, 100%, 70%);
+  --softblue: hsl(195, 74%, 62%);
+  --lightred: hsl(348, 100%, 68%);
+  --limegreen: hsl(145, 58%, 55%);
+  --violet: hsl(264, 64%, 52%);
+  --offviolet: #5747ea;
+  --softorange: hsl(43, 84%, 65%);
+  --verydarkblue: hsl(226, 43%, 10%);
+  --darkblue: hsl(235, 46%, 20%);
+  --appwhite: rgb(225, 235, 230);
+  --bgwhite: rgb(200, 195, 200);
+  --desaturatedblue: hsl(235, 45%, 61%);
+  --paleblue: hsl(236, 100%, 87%);
+  --mainFont: "Rubik", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+.muted {
+  opacity: 0.65;
+}
+
+.thin {
+  font-weight: 200;
+}
+
+.mid-thin {
+  font-weight: 300;
+}
+
+.bg-orange {
+  background: var(--orange);
+}
+.bg-lightblue {
+  background: var(--softblue);
+}
+.bg-red {
+  background: var(--lightred);
+}
+.bg-purple {
+  background: var(--violet);
+}
+.bg-lightorange {
+  background: var(--softorange);
+}
+.bg-green {
+  background: var(--limegreen);
+}
+
+@media screen and (max-width: 550px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  h5 {
+    font-size: 1.4rem;
+  }
+}

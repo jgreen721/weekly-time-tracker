@@ -1,0 +1,47 @@
+.theme-picker-parent {
+  position: absolute;
+  border: 2px solid white;
+  top: 2rem;
+  right: 7.5rem;
+  color: white;
+}
+
+.theme-picker {
+  position: relative;
+  cursor: pointer;
+  /* opacity: 0; */
+}
+
+.theme-picker::before {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 25px;
+  border-radius: 100px;
+  background-color: var(--secondaryBg);
+  top: -0.5rem;
+  left: -3.5rem;
+}
+
+.theme-picker::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 100px;
+  background-color: var(--mainBg);
+  top: 0rem;
+  left: -3rem;
+  transition: 0.5s;
+}
+
+.theme-picker:checked::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 100px;
+  background-color: var(--mainBg);
+  top: 0rem;
+  left: 1rem;
+}

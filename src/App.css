@@ -1,0 +1,31 @@
+.app[data-theme="light"] {
+  --mainBg: var(--appwhite);
+  --secondaryBg: var(--desaturatedblue);
+  --cardBg: var(--bgwhite);
+  --mainColor: var(--darkblue);
+}
+.app[data-theme="dark"] {
+  --mainBg: var(--verydarkblue);
+  --secondaryBg: var(--offviolet);
+  --cardBg: var(--darkblue);
+  --mainColor: var(--appwhite);
+}
+
+.app {
+  background: var(--mainBg);
+  color: var(--mainColor);
+}
+
+.app-content {
+  max-width: 144rem;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--mainFont);
+  padding: 2rem;
+  padding-top: 6rem;
+  position: relative;
+  /* border: 1px solid white; */
+}
